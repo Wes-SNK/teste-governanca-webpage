@@ -123,6 +123,61 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
   max-height: 500px;
   padding: 12px;
 }
+
+.sumario {
+  display: flex;
+  background-color: #fff;
+}
+.artigo-sumario {
+  background:#fff;
+  border: 1px solid #fff;
+  border-radius:6px;
+  padding:6px 12px 0 16px;
+  gap:1rem;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  width:100%;
+  position:relative;
+  box-shadow:lightgrey 0px 0px 10px;
+}
+.sumario-header {
+  font-weight:400;
+  font-size:16px;
+  margin-bottom:0; 
+}
+.sumario-header p {
+  margin:0;
+  padding-left: 60px;
+}
+.sumario-conteudo {
+  list-style:none;
+  padding-left: 50px;
+  margin:0;
+  width:100%;
+}
+.sumario-conteudo ul {
+  list-style:none;
+  padding-left:10px;
+  margin-bottom: 10px;
+}
+.subpages {
+  margin-top: -12px;
+}
+/* .botao {
+  opacity:0;
+  font-size:0.875rem;
+  transition:all 0.2s;
+  text-align:center;
+  width:100%;
+  margin-top:-1rem;
+  z-index:0;
+  color:#0074cc;
+  display:none;
+} */
+#o-que-e-governanca-de-ti {
+  margin-top: 16px;
+}
 		</style>
 		</head>
 <body class="wp-singular page-template-default page page-id-83 page-parent page-child parent-pageid-2 wp-custom-logo wp-theme-person">
@@ -152,7 +207,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
   <div>
     <div class="logo">
       <h1>
-                <a href="https://sti.ufc.br"> <img width="220px" src="https://sti.ufc.br/wp-content/uploads/2021/08/cropped-sti-brasao-260.png" alt="Superintendência de Tecnologia da Informação"> </a>
+              <a href="https://sti.ufc.br"> <img width="220px" src="https://sti.ufc.br/wp-content/uploads/2021/08/cropped-sti-brasao-260.png" alt="Superintendência de Tecnologia da Informação"> </a>
               </h1>
     </div>
     <div class="controls"> <span id="a-menu" class="screen-reader-text">Área do menu</span>
@@ -212,17 +267,66 @@ function myFunction() {
   }
 }
 </script>
+
+<div class="sumario">
+  <article class="artigo-sumario">
+    <header class="sumario-header">
+      <p>Índice</p>
+    </header>
+    <div class="sumario-conteudo">
+      <ul class="">
+        <li><a href="#o-que-e-governanca-de-ti">O que é Governança de TI?</a></li>
+        <li><a href="#governanca-versus-gestao-de-ti">Governança <em>versus</em> Gestão de TI</a></li>
+        <li><a href="#por-que-a-governanca-de-ti-e-importante">Por que a Governança de TI é importante?</a></li>
+        <li><a href="#governanca-de-tic-na-apf">Governança de TIC na APF</a></li>
+      </ul>
+    </div>
+  </article>
+  <button class="botao">Voltar ao topo</button>
+</div>
+
+<!--
+<div style="position:sticky;top:0;bottom:0;width:100%;">
+  <article style="background:#fff;border-radius:1rem;padding:1rem;transition:all 0.2s;gap:1rem;display:flex;flex-direction:column;align-items:flex-start;width:100%;z-index:40;position:relative;box-shadow:none;">
+    <header>
+      <p style="margin-bottom:0;font-weight:600;color:#222;">Nesta página</p>
+    </header>
+    <div style="display:flex;flex-direction:column;gap:1rem;align-items:flex-start;">
+      <ul style="width:100%;list-style:none;padding-left:0;">
+        <li style="width:100%;">
+          <a href="#comissao-gestora-de-tecnologia-da-informacao-(cgti)" style="display:block;padding:0.25rem 0.5rem;border-radius:0.5rem;width:100%;color:#0074cc;font-size:0.875rem;text-decoration:none;transition:all 0.3s;">Comissão Gestora de Tecnologia da Informação (CGTI)</a>
+        </li>
+        <li style="width:100%;">
+          <a href="#normas-e-referencias" style="display:block;padding:0.25rem 0.5rem;border-radius:0.5rem;width:100%;color:#0074cc;font-size:0.875rem;text-decoration:none;transition:all 0.3s;">Normas e referências</a>
+        </li>
+        <li style="width:100%;">
+          <a href="#mecanismos-de-governanca-de-ti" style="display:block;padding:0.25rem 0.5rem;border-radius:0.5rem;width:100%;color:#0074cc;font-size:0.875rem;text-decoration:none;transition:all 0.3s;">Mecanismos de governança de TI</a>
+        </li>
+        <li style="width:100%;">
+          <a href="#governo-digital" style="display:block;padding:0.25rem 0.5rem;border-radius:0.5rem;width:100%;color:#0074cc;font-size:0.875rem;text-decoration:none;transition:all 0.3s;">Governo Digital</a>
+        </li>
+        <li style="width:100%;">
+          <a href="#perfil-de-governanca-de-ti" style="display:block;padding:0.25rem 0.5rem;border-radius:0.5rem;width:100%;color:#0074cc;font-size:0.875rem;text-decoration:none;transition:all 0.3s;">Perfil de Governança de TI</a>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <button style="opacity:0;font-size:0.875rem;transition:all 0.2s;text-align:center;width:100%;margin-top:-1rem;z-index:0;color:#0074cc;display:none;">Voltar ao topo</button>
+</div>
+-->
+
 <div id="page" class="content">
   <div>
     <h1>Governança de Tecnologia da Informação e Comunicação </h1>
-    <h6>A Governança de TIC é um conjunto de práticas e processos que garantem a gestão eficiente, segura e alinhada da tecnologia da informação com os objetivos estratégicos de uma organização.</h6>
-    <h5><em>O que é Governança de TI?</em></h5>
+    <h6>A Governança de TIC é um conjunto de práticas e processos que garantem a gestão eficiente, segura e alinhada da tecnologia da informação com os objetivos estratégicos de uma organização.</h6>  
+
+<h5 id="o-que-e-governanca-de-ti"><em>O que é Governança de TI?</em></h5>
 <p>A governança de TI é um conjunto de práticas, processos e estruturas organizacionais que direcionam e controlam as decisões relacionadas à tecnologia da informação. O objetivo é garantir que os investimentos em tecnologia atendam aos objetivos estratégicos da entidade.</p>
-<h5><em>Governança versus gestão de TI</em></h5>
+<h5 id="governanca-versus-gestao-de-ti"><em>Governança versus gestão de TI</em></h5>
 <p>A governança de TI foca em estabelecer diretrizes e controles para a gestão de TI, enquanto a gestão de TI se concentra na execução dessas diretrizes e no gerenciamento das operações diárias de TI.</p>
 <p>Assim, a governança é responsável por avaliar, direcionar e monitorar a organização, numa troca contínua e explícita com a gestão. <br />Com processos, condições e objetivos diferenciados da governança, a gestão é responsável pelo “como fazer”, com atividades de planejar, executar, controlar e agir. <p>Veja, na imagem a seguir, a relação entre governança e gestão.</p>
 <figure><img src="governanca-x-gestao.png"><figcaption style="font-size: 12px">Relação entre Governança e Gestão. Referencial básico de governança do TCU, 2018.</figcaption></figure>
-<h5 style="padding-top: 16px;"><em>Por que a Governança de TI é importante?</em></h5>
+<h5  id="por-que-a-governanca-de-ti-e-importante" style="padding-top: 16px;"><em>Por que a Governança de TI é importante?</em></h5>
 <p>A governança é fundamental para garantir que os recursos sejam utilizados de forma eficiente, segura e alinhada aos objetivos estratégicos da organização, especialmente na administração pública.</p>
 <p>Manter uma Governança de TI forte ajuda as organizações a prosperar em várias áreas importantes.</p>
 <figure><img src="governanca-de-tic.png" style="max-width: 50%; padding-bottom: 16px;"></figure>
@@ -259,7 +363,7 @@ A gestão de riscos também é um pilar de sustentação da governança de TI. E
 <h6>Mensuração de Desempenho</h6>
 <p>Assim como todas as estratégias da empresa, é importante avaliar o desempenho das ações. Afinal, tudo que pode ser medido, pode ser melhorado. A avaliação deve incluir a implementação da estratégia, a execução dos projetos e a distribuição dos recursos. A partir dessa mensuração é possível direcionar ações de TI para corrigir e otimizar as estratégias da área de tecnologia.</p> 
 <p>Essa avaliação  colabora para a correção de rotas dentro da instituição, fazendo com que se possa implementar melhorias futuras.</p>
-<h5><em>Governança de Tecnologia da Informação e Comunicação na Administração Pública Federal</em></h5>
+<h5 id="governanca-de-tic-na-apf" ><em>Governança de Tecnologia da Informação e Comunicação na Administração Pública Federal</em></h5>
 <p>A Governança de TIC na administração pública federal visa garantir que a tecnologia seja utilizada de forma estratégica e eficaz para alcançar os objetivos da administração, otimizando recursos e aprimorando serviços prestados ao cidadão. Assim, envolve a transparência, a prestação de contas e a eficiência no uso dos recursos públicos. <br> Em resumo, busca garantir que os serviços de TIC atendam às necessidades da sociedade, promovendo a inclusão digital, a segurança da informação e a inovação e transformação digital.
 </p>
 <p>Alguns aspectos específicos incluem:<br></p>
@@ -269,7 +373,11 @@ A gestão de riscos também é um pilar de sustentação da governança de TI. E
 <strong>Segurança da Informação:</strong><br> Proteger os dados públicos contra ameaças e garantir a privacidade dos cidadãos.<br>
 <strong>Inovação e Transformação Digital:</strong><br>
  Incentivar o uso de novas tecnologias para melhorar a eficiência dos serviços públicos.</p><br>
-<div><h6>Saiba mais!</h6>
+
+
+
+ <div>
+  <h6 class="saiba-mais">Saiba mais!</h6>
        <ul class="subpages">
           <li>Quem aplica a Governança na UFC?</li>
           <li class="page_item page-item-3054"><a href="https://sti.ufc.br/sobre-a-sti/governanca-de-ti/contratacoes-de-ti/">Como funcionam as contratações de TIC?</a></li>
